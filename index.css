@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0px;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+
+.navbar svg {
+    margin-top: 2%;
+    margin-left: 9%;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.navbar ul {
+    display: flex;
+    margin-top: 2%;
+    margin-right: 9%;
+    font-size: 20px;
+
+}
+
+.navbar li {
+    margin-right: 10%;
+    list-style: none;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+.fa-brands {
+    margin-right: 70px;
+}
+
+.Monprojets {
+    display: flex;
+    width: 100%;
+}
+
+.Monprojets h3 {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.text {
+    width: 100%;
+    text-align: left;
+
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.titreprojet {
+    display: flex;
+    justify-content: center;
+}
+
+.choixProjet {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.choixProjet button {
+    font-size: 20px;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+
+}
+
+.favorite {
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 8px;
+
+}
+
+.container {
+    width: 60%;
+
+}
+
+.zoneImage {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 12%;
+}
+
+.titre h2 {
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+.titre h4 {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.formulaire {
+    justify-content: center;
+    display: flex;
+}
+
+.buttonEnvoyer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.buttonEnvoyer button {
+    background-color: darkslategray;
+    border-radius: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.mentionsLégales {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.chargementEmail {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 100px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.motDePasse {
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.password {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.seConnecter {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.motDePasseOublié {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.mentionsLégales2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 380px;
+    margin-right: 60px;
+}
+
+.Mode {
+    background-color: black;
+    color: azure;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+.buttonEdition button {
+    background-color: black;
+    color: aliceblue;
+    border-width: 0px;
+}
+
+.fa-solid {
+    font-size: 12px;
+    margin-top: 4px;
+    margin-right: 9px;
+}
+
+.ModeLogout {
+    display: flex;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+.titreprojet button {
+    border: 0px;
+    background-color: white;
+    font-size: 70%;
+}
+
+.hidden {
+    display: none;
+}
+
+.grandeModal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.756);
+    position: fixed;
+    top: 18px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.petiteModal {
+    width: 60%;
+    left: 25%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    top: 100px;
+    margin-top: 70px;
+}
+
+.existing-projects {
+    width: 70%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 15%;
+}
+.fermetureModal{
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.titreModal{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.buttonModal{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px ; 
+}
+.buttonModal button{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.fermetureModal{
+    display: flex;
+    justify-content: right;
+}
