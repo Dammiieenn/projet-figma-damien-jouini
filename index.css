@@ -61,7 +61,7 @@ img {
 
 }
 
-.img-container {
+.img-container2 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -228,10 +228,6 @@ h2 {
     font-size: 70%;
 }
 
-.hidden {
-    display: none;
-}
-
 .grandeModal {
     width: 100%;
     height: 100%;
@@ -260,25 +256,53 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-left: 15%;
 }
-.fermetureModal{
+
+.img-container {
+    width: 140%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.delete-icon {
+    position: absolute;
+    border: 0px;
+    background-color: rgba(0, 1, 2, 0.042);
+    color: azure;
+    left: 25%;
+}
+
+.fermetureModal {
     margin-right: 1%;
     margin-top: 1%;
 }
-.titreModal{
+
+.titreModal {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.buttonModal{
+
+.buttonModal {
     display: flex;
     justify-content: center;
-    margin-top: 70px ; 
+    margin-top: 30px;
 }
-.buttonModal button{
+
+.buttonModal button {
+    padding-bottom: 3px;
+    padding-top: 3px;
     padding-right: 40px;
     padding-left: 40px;
+    background-color: darkslategray;
+    border-radius: 10px;
+    color: azure;
 }
-.fermetureModal{
+
+.fermetureModal {
     display: flex;
     justify-content: right;
+}
+
+.hidden {
+    display: none;
 }
