@@ -303,6 +303,84 @@ h2 {
     justify-content: right;
 }
 
+
+/* Style de la deuxième modal */
+.completeModal2{
+    display: none;
+}
+
+#modal2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.756);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style du contenu de la deuxième modal */
+.modal-content2 {
+    width: 60%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Style du bouton de fermeture dans la deuxième modal */
+.close2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+}
+.fa-solid.fa-arrow-left{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.close{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.titreModal2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.containerModal2{
+    background-color:rgba(0, 255, 255, 0.278);
+    width: 80%;
+    height: 150px;
+    margin-left: 10%; 
+}
+.fa-regular.fa-image{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.buttonModal2{
+    display: flex;
+    justify-content: center;
+}
+.formatImage{
+    display: flex;
+    justify-content: center;
+}
+.titreCommentaireModal2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .hidden {
     display: none;
 }

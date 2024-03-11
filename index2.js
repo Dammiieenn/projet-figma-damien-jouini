@@ -193,6 +193,7 @@ function checkTokenLogin() {
   const adminBar = document.querySelector(".admin-bar");
   const allFilterBtn = document.querySelector(".choixProjet");
   const modifierBtn = document.querySelector(".buttonEdition");
+  const ModeLogout = document.querySelector(".ModeLogout");
   // Si un token est présent, ajuste l'interface pour un utilisateur connecté
   if (tokenAuth) {
     if (loginLink) loginLink.textContent = "logout"; // Change le texte du lien de connexion en "logout"
@@ -200,6 +201,7 @@ function checkTokenLogin() {
     if (adminBar) adminBar.classList.remove("hidden");
     if (allFilterBtn) allFilterBtn.classList.add("hidden");
     if (modifierBtn) modifierBtn.classList.remove("hidden");
+    if (ModeLogout) ModeLogout.classList.remove("hidden");
     // Ajoute un écouteur d'événement pour gérer la déconnexion
     loginLink.addEventListener("click", handleLogout);
   } else {
@@ -208,6 +210,7 @@ function checkTokenLogin() {
     // Cache la barre d'administration et le bouton de modification
     if (adminBar) adminBar.classList.add("hidden");
     if (modifierBtn) modifierBtn.parentNode.removeChild(modifierBtn);
+    if (ModeLogout) ModeLogout.classList.add("hidden");
   }
 }
 checkTokenLogin();
@@ -221,6 +224,7 @@ function toggleModal(isVisible) {
 }
 
 ////////////////Modal/////////////////
+
 function openModal() {
   // Sélectionne tous les boutons qui ouvrent la modale
   const allEditBtn = document.querySelectorAll(".buttonEdition");
@@ -247,17 +251,27 @@ function openModal() {
       });
     });
   });
+  // Ajoutez l'ouverture de la deuxième modal ici
+  const openSecondModalButton = document.getElementById('openSecondModal');
+  openSecondModalButton.addEventListener('click', openSecondModal);
 }
 openModal();
+
+function openSecondModal() {
+  const modal2 = document.getElementById('modal2');
+  modal2.style.display = 'block';
+}
+openSecondModal();
 
 function closeModalBtn() {
   // Ajoute un écouteur d'événement au bouton de fermeture
   const closeModalBtn = document.querySelector(".fermetureModal");
   const editModal = document.querySelector(".grandeModal");
-  if(editModal) {
-    closeModalBtn.addEventListener("click", () =>{
-      toggleModal(false);}) // Ferme la modale
-  } 
+  if (editModal) {
+    closeModalBtn.addEventListener("click", () => {
+      toggleModal(false);
+    }) // Ferme la modale
+  }
 }
 closeModalBtn();
 
@@ -339,9 +353,8 @@ const addProjectToDOM = (project) => {
   const imgContainer = document.createElement("div");
   imgContainer.setAttribute("class", "img-container");
   imgContainer.setAttribute("data-id", project.id);
-  imgContainer.innerHTML = `${
-    newFigure.querySelector("img").outerHTML
-  }<button class="delete-icon"><i class="fa-solid fa-trash-can"></i></button>`;
+  imgContainer.innerHTML = `${newFigure.querySelector("img").outerHTML
+    }<button class="delete-icon"><i class="fa-solid fa-trash-can"></i></button>`;
 
   const modalProjects = document.querySelector(".existing-projects");
   modalProjects.appendChild(imgContainer);

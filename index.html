@@ -99,8 +99,10 @@
             <h5>mentions légales</h5>
         </div>
     </footer>
-    <div class="grandeModal hidden">
+    <div id="modal1" class="grandeModal hidden">
         <div class="petiteModal">
+            <div class="add-photo-form">
+            </div>
             <div class="fermetureModal">
                 <i class="fa-solid fa-xmark"></i>
             </div>
@@ -110,7 +112,65 @@
             <div class="existing-projects">
             </div>
             <div class="buttonModal">
-                <button name="button">Ajouter une photo</button>
+                <button id="openModal2">Ajouter une photo</button>
+            </div>
+        </div>
+        <!-- Deuxième modal -->
+        <div id="modal2" class="grandeModal hidden">
+            <div class="completeModal2">
+            </div>
+            <div class="petiteModal">
+                <div class="modal-content">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span class="close">&times;</span>
+                    <form id="add-photo-form">
+                        <div class="custom-file-upload" id="image-upload-container">
+                            <div class="titreModal2">
+                                <p>Ajout photo</p>
+                            </div>
+                            <div class="containerModal2">
+                                <i class="fa-regular fa-image" id="image-upload-icon"></i>
+                                <div class="buttonModal2">
+                                    <button id="image-upload-btn">+ Ajouter photo</button>
+                                    <label for="image"></label>
+                                </div>
+                                <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg"
+                                    style="display: none" />
+                                <div class="formatImage">
+                                    <p id="file-info-text">jpg, png: 4 mo max</p>
+                                </div>
+                                <img id="uploaded-image"
+                                    src="./assets/images/pngtree-vector-picture-icon-png-image_695350.jpg"
+                                    alt="image chargée" style="display: none" />
+                            </div>
+                        </div>
+                        <div class="titreCommentaireModal2">
+                            <label for="title">Titre</label>
+                            <input type="text" id="title" name="title" />
+                        </div>
+                        <div class="categoryModal2">
+                            <label for="project-category">Catégorie</label>
+                            <select id="project-category" name="category">
+                                <option selected disabled hidden value=" "></option>
+                                <option value="1">Objets</option>
+                                <option value="2">Appartements</option>
+                                <option value="3">Hotels & restaurants</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <div id="form-error-message" class="hidden">
+                                Veuillez remplir tous les champs.
+                            </div>
+                            <div id="form-success-message" class="form-success hidden">
+                                Travail ajouté avec succès !
+                            </div>
+                        </div>
+
+                        <button id="btn-valider" class="submit-image" type="submit">
+                            Valider
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
