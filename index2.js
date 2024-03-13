@@ -251,18 +251,20 @@ function openModal() {
       });
     });
   });
-  // Ajoutez l'ouverture de la deuxième modal ici
-  const openSecondModalButton = document.getElementById('openModal2');
-  openSecondModalButton.addEventListener('click', openSecondModal);
 }
+const openAddPhotoModal = () => {
+  const addPhotoButton = document.getElementById("openModal2");
+  if (addPhotoButton) {
+    addPhotoButton.addEventListener("click", () => {
+      const modalContent = document.querySelector(".petiteModal");
+      const modalContentForm = document.querySelector(".form");
+      modalContent.classList.add("hide");
+      modalContentForm.classList.remove("hide");
+    });
+  }
+};
 openModal();
-
- //ouverture deuxieme modal
-function openSecondModal() {
-  const modal2 = document.getElementById('petiteModal');
-  modal2.style.display = 'block';
-}
-openSecondModal();
+openAddPhotoModal();
 
 function closeModalBtn() {
   // Ajoute un écouteur d'événement au bouton de fermeture
