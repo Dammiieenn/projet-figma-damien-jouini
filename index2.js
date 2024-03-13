@@ -259,7 +259,7 @@ openModal();
 
  //ouverture deuxieme modal
 function openSecondModal() {
-  const modal2 = document.getElementById('modal2');
+  const modal2 = document.getElementById('petiteModal');
   modal2.style.display = 'block';
 }
 openSecondModal();

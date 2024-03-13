@@ -116,61 +116,59 @@
             </div>
         </div>
         <!-- Deuxième modal -->
-        <div id="modal2" class="grandeModal hidden">
-            <div class="completeModal2">
-                <div class="petiteModal">
-                    <div class="modal-content2">
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <span class="close">&times;</span>
-                        <form id="add-photo-form">
-                            <div class="custom-file-upload" id="image-upload-container">
-                                <div class="titreModal2">
-                                    <p>Ajout photo</p>
+
+            <div class="petiteModal form hide">
+                <form id="add-photo-form"></form>
+                <div class="modal-content2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span class="close">&times;</span>
+                        <div class="custom-file-upload" id="image-upload-container">
+                            <div class="titreModal2">
+                                <p>Ajout photo</p>
+                            </div>
+                            <div class="containerModal2">
+                                <i class="fa-regular fa-image" id="image-upload-icon"></i>
+                                <div class="buttonModal2">
+                                    <button id="image-upload-btn">+ Ajouter photo</button>
+                                    <label for="image"></label>
                                 </div>
-                                <div class="containerModal2">
-                                    <i class="fa-regular fa-image" id="image-upload-icon"></i>
-                                    <div class="buttonModal2">
-                                        <button id="image-upload-btn">+ Ajouter photo</button>
-                                        <label for="image"></label>
-                                    </div>
-                                    <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg"
-                                        style="display: none" />
-                                    <div class="formatImage">
-                                        <p id="file-info-text">jpg, png: 4 mo max</p>
-                                    </div>
-                                    <img id="uploaded-image"
-                                        src="./assets/images/pngtree-vector-picture-icon-png-image_695350.jpg"
-                                        alt="image chargée" style="display: none" />
+                                <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg"
+                                    style="display: none" />
+                                <div class="formatImage">
+                                    <p id="file-info-text">jpg, png: 4 mo max</p>
                                 </div>
+                                <img id="uploaded-image"
+                                    src="./assets/images/pngtree-vector-picture-icon-png-image_695350.jpg"
+                                    alt="image chargée" style="display: none" />
                             </div>
-                            <div class="titreCommentaireModal2">
-                                <label for="title">Titre</label>
-                                <input type="text" id="title" name="title" />
+                        </div>
+                        <div class="titreCommentaireModal2">
+                            <label for="title">Titre</label>
+                            <input type="text" id="title" name="title" />
+                        </div>
+                        <div class="categoryModal2">
+                            <label for="project-category">Catégorie</label>
+                            <select id="project-category" name="category">
+                                <option selected disabled hidden value=" "></option>
+                                <option value="1">Objets</option>
+                                <option value="2">Appartements</option>
+                                <option value="3">Hotels & restaurants</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <div id="form-error-message" class="hidden">
+                                Veuillez remplir tous les champs.
                             </div>
-                            <div class="categoryModal2">
-                                <label for="project-category">Catégorie</label>
-                                <select id="project-category" name="category">
-                                    <option selected disabled hidden value=" "></option>
-                                    <option value="1">Objets</option>
-                                    <option value="2">Appartements</option>
-                                    <option value="3">Hotels & restaurants</option>
-                                </select>
+                            <div id="form-success-message" class="form-success hidden">
+                                Travail ajouté avec succès !
                             </div>
-                            <div class="line">
-                                <div id="form-error-message" class="hidden">
-                                    Veuillez remplir tous les champs.
-                                </div>
-                                <div id="form-success-message" class="form-success hidden">
-                                    Travail ajouté avec succès !
-                                </div>
-                            </div>
-                            <div class="buttonValidationModal2">
-                                <button id="btn-valider" class="submit-image" type="submit">
-                                    Valider
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="buttonValidationModal2">
+                            <button id="btn-valider" class="submit-image" type="submit">
+                                Valider
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
