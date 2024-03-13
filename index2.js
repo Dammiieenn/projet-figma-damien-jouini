@@ -252,11 +252,12 @@ function openModal() {
     });
   });
   // Ajoutez l'ouverture de la deuxième modal ici
-  const openSecondModalButton = document.getElementById('openSecondModal');
+  const openSecondModalButton = document.getElementById('openModal2');
   openSecondModalButton.addEventListener('click', openSecondModal);
 }
 openModal();
 
+ //ouverture deuxieme modal
 function openSecondModal() {
   const modal2 = document.getElementById('modal2');
   modal2.style.display = 'block';

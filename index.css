@@ -305,8 +305,8 @@ h2 {
 
 
 /* Style de la deuxième modal */
-.completeModal2{
-    display: none;
+.completeModal2 {
+    
 }
 
 #modal2 {
@@ -314,16 +314,15 @@ h2 {
     height: 100%;
     background-color: rgba(169, 169, 169, 0.756);
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 18px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 /* Style du contenu de la deuxième modal */
 .modal-content2 {
     width: 60%;
+    left: 25px;
     height: 80%;
     background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -340,47 +339,85 @@ h2 {
     color: #888;
     cursor: pointer;
 }
-.fa-solid.fa-arrow-left{
+
+.fa-solid.fa-arrow-left {
     margin-top: 10px;
     margin-left: 10px;
 }
-.close{
+
+.close {
     float: right;
     margin-top: 10px;
     margin-right: 10px;
 }
-.titreModal2{
+
+.titreModal2 {
     display: flex;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 20px;
+    font-size: 20px;
 }
-.containerModal2{
-    background-color:rgba(0, 255, 255, 0.278);
+
+.containerModal2 {
+    background-color: rgba(0, 255, 255, 0.278);
     width: 80%;
     height: 150px;
-    margin-left: 10%; 
+    margin-left: 10%;
 }
-.fa-regular.fa-image{
+
+.fa-regular.fa-image {
     display: flex;
     justify-content: center;
     font-size: 50px;
     padding-top: 20px;
     padding-bottom: 20px
 }
-.buttonModal2{
+
+.buttonModal2 {
     display: flex;
     justify-content: center;
 }
-.formatImage{
+
+#image-upload-btn {
+    border-radius: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.formatImage {
     display: flex;
     justify-content: center;
 }
-.titreCommentaireModal2{
+
+.titreCommentaireModal2 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    margin-top: 20px;
 }
+
+.categoryModal2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttonValidationModal2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#btn-valider {
+    border-radius: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 .hidden {
     display: none;
 }
