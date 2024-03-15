@@ -257,7 +257,7 @@ const openAddPhotoModal = () => {
   if (addPhotoButton) {
     addPhotoButton.addEventListener("click", () => {
       const modalContent = document.querySelector(".petiteModal");
-      const modalContentForm = document.querySelector(".form");
+      const modalContentForm = document.querySelector(".petiteModal-form");
       modalContent.classList.add("hide");
       modalContentForm.classList.remove("hide");
     });
@@ -266,17 +266,43 @@ const openAddPhotoModal = () => {
 openModal();
 openAddPhotoModal();
 
-function closeModalBtn() {
+const closeModal = () => {
   // Ajoute un écouteur d'événement au bouton de fermeture
-  const closeModalBtn = document.querySelector(".fermetureModal");
+  const closeModalBtn = document.querySelectorAll(".fermetureModal, .fermetureModal-form");
+  closeModalBtn.forEach((button) => {
+    button.addEventListener("click",() => toggleModal(false));
+  });
   const editModal = document.querySelector(".grandeModal");
   if (editModal) {
-    closeModalBtn.addEventListener("click", () => {
-      toggleModal(false);
-    }) // Ferme la modale
+    editModal.addEventListener("click", (event) => {
+      const petiteModal = document.querySelector(".petiteModal");
+      const petiteModalForm = document.querySelector(".petiteModal-form");
+      if (
+        !petiteModal.contains(event.target)
+        &&
+        !petiteModalForm.contains(event.target)
+       ){
+        toggleModal(false);
+       }
+    })
   }
-}
-closeModalBtn();
+ }
+
+closeModal();
+
+// retour a la premiere modal
+const backModal = () => {
+  const backModal = document.querySelector(".back-btn");
+  if (backModal) {
+    backModal.addEventListener("click", () => {
+      const modalContent = document.querySelector(".petiteModal");
+      const modalContentForm = document.querySelector(".petiteModal-form");
+      modalContent.classList.remove("hide");
+      modalContentForm.classList.add("hide");
+    });
+  }
+};
+backModal();
 
 // Supprime un projet du DOM
 const deleteProjectFromDOM = (projectId) => {
@@ -350,7 +376,7 @@ deleteWorks();
 // Ajoute un projet au DOM
 const addProjectToDOM = (project) => {
   const newFigure = createFigure(project);
-  const sectionProjet = document.querySelector(".projets");
+  const sectionProjet = document.querySelector(".zoneImage");
   sectionProjet.appendChild(newFigure);
 
   const imgContainer = document.createElement("div");
@@ -366,7 +392,7 @@ const addProjectToDOM = (project) => {
 // FORMULAIRE D'AJOUT DE PROJET
 
 // Validation et envoi du formulaire d'ajout de projet
-const formPostProject = document.querySelector("#add-photo-form");
+const formPostProject = document.getElementById("image-upload-btn");
 if (formPostProject) {
   formPostProject.addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -438,3 +464,4 @@ const uploadImage = () => {
     });
   }
 };
+uploadImage();

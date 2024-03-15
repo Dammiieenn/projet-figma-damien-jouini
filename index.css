@@ -247,6 +247,14 @@ h2 {
     top: 100px;
     margin-top: 70px;
 }
+.petiteModal-form{
+    width: 60%;
+    left: 25%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    top: 100px;
+    margin-top: 70px;
+}
 
 .existing-projects {
     width: 70%;
@@ -263,17 +271,27 @@ h2 {
     margin-top: 15px;
 }
 
-.delete-icon {
-    position: absolute;
+.fa-trash-can{
+    color:white;
+    
+}
+
+.delete-icon{
+    background-color:black;
+    border: none;
+    position:absolute;
+}
+
+.fermetureModal-form {
     border: 0px;
-    background-color: rgba(0, 1, 2, 0.042);
-    color: azure;
-    left: 25%;
+    background-color: rgba(0, 1, 2, 0);
+    margin-left: 90%;
 }
 
 .fermetureModal {
-    margin-right: 1%;
-    margin-top: 1%;
+    margin-left: 90%;
+    border: 0px;
+    background-color: white;
 }
 
 .titreModal {
@@ -301,6 +319,7 @@ h2 {
 .fermetureModal {
     display: flex;
     justify-content: right;
+
 }
 
 #modal2 {
@@ -313,9 +332,12 @@ h2 {
     justify-content: center;
 }
 
-.fa-solid.fa-arrow-left {
+.back-btn {
     margin-top: 10px;
     margin-left: 10px;
+    border: none;
+    background-color: white;
+
 }
 
 .close {

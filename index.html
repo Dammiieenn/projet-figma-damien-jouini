@@ -103,9 +103,9 @@
         <div class="petiteModal">
             <div class="add-photo-form">
             </div>
-            <div class="fermetureModal">
+            <button class="fermetureModal">
                 <i class="fa-solid fa-xmark"></i>
-            </div>
+            </button>
             <div class="titreModal">
                 <h4>Galerie photo</h4>
             </div>
@@ -117,11 +117,15 @@
         </div>
         <!-- Deuxième modal -->
 
-            <div class="petiteModal form hide">
+            <div class="petiteModal-form hide">
                 <form id="add-photo-form"></form>
                 <div class="modal-content2">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <span class="close">&times;</span>
+                    <button class="back-btn">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="fermetureModal-form">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                         <div class="custom-file-upload" id="image-upload-container">
                             <div class="titreModal2">
                                 <p>Ajout photo</p>
