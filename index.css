@@ -247,7 +247,8 @@ h2 {
     top: 100px;
     margin-top: 70px;
 }
-.petiteModal-form{
+
+.petiteModal-form {
     width: 60%;
     left: 25%;
     height: 80%;
@@ -271,15 +272,15 @@ h2 {
     margin-top: 15px;
 }
 
-.fa-trash-can{
-    color:white;
-    
+.fa-trash-can {
+    color: white;
+
 }
 
-.delete-icon{
-    background-color:black;
+.delete-icon {
+    background-color: black;
     border: none;
-    position:absolute;
+    position: absolute;
 }
 
 .fermetureModal-form {
@@ -416,6 +417,7 @@ h2 {
 .hidden {
     display: none;
 }
-.hide{
+
+.hide {
     display: none;
 }

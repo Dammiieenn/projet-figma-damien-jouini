@@ -270,7 +270,7 @@ const closeModal = () => {
   // Ajoute un écouteur d'événement au bouton de fermeture
   const closeModalBtn = document.querySelectorAll(".fermetureModal, .fermetureModal-form");
   closeModalBtn.forEach((button) => {
-    button.addEventListener("click",() => toggleModal(false));
+    button.addEventListener("click", () => toggleModal(false));
   });
   const editModal = document.querySelector(".grandeModal");
   if (editModal) {
@@ -281,12 +281,12 @@ const closeModal = () => {
         !petiteModal.contains(event.target)
         &&
         !petiteModalForm.contains(event.target)
-       ){
+      ) {
         toggleModal(false);
-       }
+      }
     })
   }
- }
+}
 
 closeModal();
 
